@@ -1,0 +1,473 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>12. Jstack 工具 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="13. 死锁.html" />
+    
+    
+    <link rel="prev" href="11. 同步工具类.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1. 并发编程.html">
+            
+                <a href="1. 并发编程.html">
+            
+                    
+                    1. 并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2. 线程 Thread.html">
+            
+                <a href="2. 线程 Thread.html">
+            
+                    
+                    2. 线程 Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3. synchronized 内置锁.html">
+            
+                <a href="3. synchronized 内置锁.html">
+            
+                    
+                    3. synchronized 内置锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4. volatile 关键字.html">
+            
+                <a href="4. volatile 关键字.html">
+            
+                    
+                    4. volatile 关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5. CAS.html">
+            
+                <a href="5. CAS.html">
+            
+                    
+                    5. CAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6. Java中的锁.html">
+            
+                <a href="6. Java中的锁.html">
+            
+                    
+                    6. Java中的锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7. 并发容器和框架.html">
+            
+                <a href="7. 并发容器和框架.html">
+            
+                    
+                    7. 并发容器和框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8. 原子操作类.html">
+            
+                <a href="8. 原子操作类.html">
+            
+                    
+                    8. 原子操作类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9. Executor 框架.html">
+            
+                <a href="9. Executor 框架.html">
+            
+                    
+                    9. Executor 框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10. 任务执行器-线程池.html">
+            
+                <a href="10. 任务执行器-线程池.html">
+            
+                    
+                    10. 任务执行器-线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11. 同步工具类.html">
+            
+                <a href="11. 同步工具类.html">
+            
+                    
+                    11. 同步工具类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="12. Jstack 工具.html">
+            
+                <a href="12. Jstack 工具.html">
+            
+                    
+                    12. Jstack 工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13. 死锁.html">
+            
+                <a href="13. 死锁.html">
+            
+                    
+                    13. 死锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14. 分布式锁.html">
+            
+                <a href="14. 分布式锁.html">
+            
+                    
+                    14. 分布式锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15. 如何学习并发编程.html">
+            
+                <a href="15. 如何学习并发编程.html">
+            
+                    
+                    15. 如何学习并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="READ-ME.html">
+            
+                <a href="READ-ME.html">
+            
+                    
+                    READ-ME
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >12. Jstack 工具</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="12-jstack-&#x5DE5;&#x5177;">12. Jstack &#x5DE5;&#x5177;</h1>
+<p>JDK&#x81EA;&#x5E26;&#x7684;&#x67E5;&#x8BE2;Java&#x7EBF;&#x7A0B;&#x4FE1;&#x606F;&#x7684;&#x547D;&#x4EE4;&#x5DE5;&#x5177;</p>
+<pre><code class="lang-shell">[root@mikai-CS ~]# jstack 22155
+2020-04-11 22:23:57
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (24.80-b11 mixed mode):
+
+&quot;dna-2522&quot; daemon prio=10 tid=0x00007f4c7c585800 nid=0x70a5 in Object.wait() [0x00007f4cd6c16000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+    at java.lang.Object.wait(Native Method)
+    at com.jiuqi.dna.core.spi.work.WorkingManager.getWorkToDo(WorkingManager.java:412)
+    - locked &lt;0x00000007a04857e8&gt; (a com.jiuqi.dna.core.spi.work.WorkingThread)
+    at com.jiuqi.dna.core.spi.work.WorkingThread.run(WorkingThread.java:42)
+
+&quot;[ThreadPool Manager] - Idle Thread&quot; daemon prio=10 tid=0x00007f4c8c005000 nid=0x56fd in Object.wait() [0x00007f4cdfa6b000]
+   java.lang.Thread.State: WAITING (on object monitor)
+    at java.lang.Object.wait(Native Method)
+    at org.eclipse.equinox.internal.tpt.threadpool.Executor.run(Executor.java:106)
+    - locked &lt;0x0000000710854420&gt; (a org.eclipse.equinox.util.tpt.threadpool.Executor)
+
+&quot;dna-4 Acceptor0 SelectChannelConnector@0.0.0.0:9412&quot; daemon prio=10 tid=0x00007f4c84b2b000 nid=0x56af waiting for monitor entry [0x00007f4ce46be000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+    at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:234)
+    - waiting to lock &lt;0x000000071089f080&gt; (a java.lang.Object)
+    at org.eclipse.jetty.server.nio.accept(SelectChannelConnector.java:109)
+    at com.jiuqi.dna.core.spi.work.WorkingThread.run(WorkingThread.java:44)
+
+&quot;GC task thread#0 (ParallelGC)&quot; prio=10 tid=0x00007f4cf8022000 nid=0x568e runnable
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x4F9D;&#x6B21;&#x662F;</p>
+<pre><code>&quot;dna-2522&quot;    //&#x7EBF;&#x7A0B;&#x540D;&#x79F0;
+daemon        //&#x4EE3;&#x8868;&#x5B88;&#x62A4;&#x7EBF;&#x7A0B;
+prio=10        //&#x4F18;&#x5148;&#x7EA7;&#x4E3A;10
+
+java.lang.Thread.State: TIMED_WAITING        //&#x7EBF;&#x7A0B;&#x72B6;&#x6001;
+- waiting to lock    //&#x7B49;&#x5F85;&#x4E00;&#x4E2A;&#x9501;:&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x76EE;&#x524D;&#x7EBF;&#x7A0B;&#x5904;&#x4E8E;&#x963B;&#x585E;&#x72B6;&#x6001;;
+- locked             //&#x5DF2;&#x4E0A;&#x9501;:&#x6700;&#x8FD1;&#x4E00;&#x884C;&#x7684;&#x6808;&#x5E27;&#x5C31;&#x662F;&#x52A0;&#x9501;&#x7684;&#x4F4D;&#x7F6E;;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11. 同步工具类.html" class="navigation navigation-prev " aria-label="Previous page: 11. 同步工具类">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="13. 死锁.html" class="navigation navigation-next " aria-label="Next page: 13. 死锁">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"12. Jstack 工具","level":"1.13","depth":1,"next":{"title":"13. 死锁","level":"1.14","depth":1,"path":"target/13. 死锁.md","ref":"./target/13. 死锁.md","articles":[]},"previous":{"title":"11. 同步工具类","level":"1.12","depth":1,"path":"target/11. 同步工具类.md","ref":"./target/11. 同步工具类.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"target/12. Jstack 工具.md","mtime":"2021-01-17T14:05:59.011Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-17T14:06:42.626Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
